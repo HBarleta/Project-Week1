@@ -20,7 +20,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="/">Home</a>
                         <a class="nav-link" href="/categories">Categories</a>
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="/shopping_cart">View Cart</a>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
     </div>
     <div class="container">
         <div class="container">
-            <h2 class="mb-3 p-3 text-center">Categories</h2>
+            <h2 class="mb-3 p-3 text-center">{{one_category.name}}</h2>
             <div class="row d-flex justify-content-evenly">
                 {%for one_item in one_category.items%}
                 <div class="card mb-3" style="width: 18rem;">
@@ -39,6 +39,7 @@
                             <p>{{one_item.name}}</p>
                         </a>
                         <p>${{one_item.price}}</p>
+                        
                     </div>
                 </div>
                 {%endfor%}

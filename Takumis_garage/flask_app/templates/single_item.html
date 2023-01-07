@@ -20,7 +20,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="/">Home</a>
                         <a class="nav-link" href="/categories">Categories</a>
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="/shopping_cart">View Cart</a>
                     </div>
                 </div>
             </div>
@@ -37,7 +37,9 @@
                 <h3>{{single_item.name}}</h3>
                 <p>Part#: {{single_item.num}}</p>
                 <h4>${{single_item.price}}</h4>
-                <button class="btn btn-warning my-5">Add to Cart</button>
+                <form action="/single_item/add_cart/{{single_item.id}}" method="POST">
+                    <button class="btn btn-warning my-5">Add to Cart</button>
+                </form>
             </div>
         </div>
     </div>

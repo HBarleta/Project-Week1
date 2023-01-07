@@ -10,10 +10,6 @@ from flask_app import app
 from flask import flash
 # import flash for incorrect inputs
 
-@app.route('/')
-@app.route('/home')
-def home():
-    return render_template('index.html')
 
 @app.route('/categories')
 def shop_all_categories():
