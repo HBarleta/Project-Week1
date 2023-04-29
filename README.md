@@ -3,8 +3,10 @@ Takumi's Garage is an E-Commerce website geared towards the Honda S2000 tuning c
 More vehicles to be added as well as more items to purchase
 Payment is currently being handled through STRIPE API however, Paypal option is currently under construction and will replace STRIPE in the future
 
-Developed with AGILE methodology within a 1 week deadline
+Developed with AGILE methodology within a 1 week deadline.
+
 Entire project is organized in MVC (Models, Views and Controllers) template
+
 Frontend and Backend Languages / frameworks :
 * Python
 * Javascript
